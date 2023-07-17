@@ -144,6 +144,9 @@ class GradientDescent:
         return weight_vector - (gradient_vector_value) * np.array(gradient_C_vector)
 
 def replace_nested_list(nested_list, flat_list, flat_list_index = 0):
+    """This is needed to replace data from nested list to a flat list
+        in the same positions"""
+    
     for i in range(len(nested_list)):
         if isinstance(nested_list[i], list):
             flat_list_index = replace_nested_list(nested_list[i], flat_list, flat_list_index)
@@ -197,7 +200,7 @@ if __name__ == "__main__":
     # neurons = np.array([len(features),5,5,len(target)])
 
     #-------------------
-    # Dummy Dataset
+    # Dummy Dataset (AND logic gate)
     #-------------------
     neurons = np.array([2,4,1])
     training_data = [
