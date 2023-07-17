@@ -169,6 +169,7 @@ if __name__ == "__main__":
     gd = GradientDescent()
     #-------------------
     # MNIST Dataset Load
+    # http://yann.lecun.com/exdb/mnist
     #-------------------
     # df = pd.read_csv("./data/mnist/train.csv")
     # training_data = [row[::-1].tolist() for row in df.values]
@@ -188,6 +189,7 @@ if __name__ == "__main__":
 
     #-------------------
     # Iris Dataset Load
+    # https://archive.ics.uci.edu/dataset/53/iris
     #-------------------
 
     # features = ["sepal-length","sepal-width","petal-length","petal-width"]
